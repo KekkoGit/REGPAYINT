@@ -1,0 +1,138 @@
+
+body {
+    overflow-y: scroll;
+    background-color: #121212; /* Colore sfondo scuro */
+    color: #fff; /* Colore base del testo */
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Impostazioni di base del font */
+body, h1, h2, h3, h4, h5, h6, p {
+    color: #FFF; /* Un bianco puro per un forte contrasto */
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Una famiglia di font puliti e moderni */
+    margin: 0;
+    padding: 0;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.568); /* Leggera ombra per dare profondità */
+}
+
+.container {
+  background-color: #3a3a3a; /* Colore di sfondo scuro */
+  color: #fff; /* Colore del testo bianco */
+  padding: 10px; /* Spazio interno al contenuto */
+  border-radius: 10px; /* Bordo arrotondato */
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.568); /* Leggera ombra per dare profondità */
+  text-align: center; /* Centra il testo all'interno del div */
+}
+
+h1 {
+    font-size: 16px; /* Consistent font size */
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5; /* Improved readability */
+    display: inline-block; /* Ensures proper layout */
+    width: 100%; /* Stretches to fit container */
+    font-weight: 400;
+    font-size: 2rem;
+    color: #ffffff;
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin-top: 10;
+    margin-bottom: 10px;
+  }
+
+
+  h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 3rem;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: animazione-comparsa 2s ease-in-out;
+  }
+
+  h3{
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: center;
+    background: linear-gradient(to right, #333 0%, #666 50%, #999 100%);
+    color: #fff;
+    animation: animazione-comparsa 2s ease-in-out;
+  }
+  
+  h4 {
+    font-size: 20px; /* Consistent font size */
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5; /* Improved readability */
+    display: inline-block; /* Ensures proper layout */
+    width: 100%; /* Stretches to fit container */
+    font-weight: 400;
+    color: #ffffff;
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin-top: 10;
+    margin-bottom: 10px;
+  }
+
+  .divfooter {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #ffffff;
+    background-color: #0011ff21;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10;
+    margin-bottom: 10px;
+    animation: zoom-rotazione 2s ease-in-out;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.507); /* Adjust shadow parameters */
+  }
+
+@keyframes animazione-comparsa {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+
+  /*Scrollbar*/
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: #242424;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 5px;
+  }
+  
+  body::-webkit-scrollbar:hover {
+    background-color: #ffffff;
+  }
+  
+  body::-webkit-scrollbar-thumb:hover {
+    background-color: #000000;
+  }
+
+#registrazione {
+  font-size:medium;
+}

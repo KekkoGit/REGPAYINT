@@ -1,0 +1,188 @@
+/* Base styles for a modern and accessible date input */
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="date"],
+input[type="tel"] {
+  appearance: none; /* Remove default browser styles */
+  background-color: #3b3b3b; /* Light background */
+  color: #ffffff; /* Dark text color for readability */
+  border: 1px solid #464646; /* Subtle border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 10px; /* Adjust padding as needed */
+  font-size: 16px; /* Consistent font size */
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5; /* Improved readability */
+  display: inline-block; /* Ensures proper layout */
+  width: 100%; /* Stretches to fit container */
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out; /* Smooth transitions */
+  
+}
+
+input[type="password"] {
+  appearance: none; /* Remove default browser styles */
+  background-color: #424242; /* Light background */
+  color: #ffffff; /* Dark text color for readability */
+  border: 1px solid #464646; /* Subtle border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 10px; /* Adjust padding as needed */
+  font-size: 16px; /* Consistent font size */
+  line-height: 1.5; /* Improved readability */
+  font-family: 'Montserrat', sans-serif;
+  display: inline-block; /* Ensures proper layout */
+  width: 100%; /* Stretches to fit container */
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out; /* Smooth transitions */
+  /* Hide characters for password security */
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  -webkit-text-security: disc; /* Webkit browsers */
+  text-decoration: disc; /* Standard browsers */
+}
+
+textarea {
+  appearance: none; /* Remove default browser styles */
+  background-color: #303030; /* Light background */
+  color: #333; /* Dark text color for readability */
+  border: 1px solid #2b2b2b; /* Subtle border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 10px; /* Adjust padding as needed */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px; /* Consistent font size */
+  line-height: 1.5; /* Improved readability */
+  display: block; /* Fills the available width */
+  width: 100%; /* Stretches to fit container */
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out; /* Smooth transitions */
+  resize: vertical; /* Allow vertical resizing */
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  appearance: none; /* Remove default browser styles */
+  /* Style the actual checkbox/radio element */
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ccc;
+  border-radius: 50%; /* Circular shape */
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out; /* Smooth transitions */
+}
+  /* Style the element after it's checked */
+  &:checked {
+    background-color: #339933; /* Green for checked state */
+    border-color: #339933;
+  }
+
+/* Hover state for a subtle focus indication */
+input[type="password"]:hover,
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="url"]:hover,
+input[type="search"]:hover,
+input[type="date"]:hover,
+input[type="tel"]:hover,
+input[type="date"]:hover {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #333;
+  border-color: #555;
+  cursor: pointer; /* Indicate interactivity */
+}
+
+/* Focus state for a clear focus ring */
+input[type="password"]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="date"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus {
+  outline: 2px solid rgb(255, 255, 255); /* Focus ring color */
+}
+
+/* Adjust styles for validation states (optional) */
+input[type="date"].invalid {
+  background-color: #993333; /* Reddish background for error */
+  border-color: #cc0000;
+}
+
+input[type="date"].valid {
+  background-color: #339933; /* Greenish background for success */
+  border-color: #00cc00;
+}
+
+select {
+  appearance: none; /* Remove default browser styles */
+  background-color: #424242; /* Light background */
+  color: #ffffff; /* Dark text color for readability */
+  border: 1px solid #ffffff; /* Subtle border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 10px 8px; /* Adjust padding as needed */
+  font-size: 16px; /* Consistent font size */
+  line-height: 1.5; /* Improved readability */
+  display: inline-block; /* Ensures proper layout */
+  width: fit-content ; /* Stretches to fit container */
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out; /* Smooth transitions */
+  /* Style the arrow on the right side */
+  &::-ms-expand {
+    display: none; /* Hides default IE arrow */
+  }
+  &:after {
+    content: "\25BC"; /* Downward triangle arrow */
+    color: #333; /* Matches text color */
+    font-size: 12px; /* Smaller arrow size */
+    position: absolute;
+    right: 10px; /* Adjust arrow position */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Align arrow with select */
+    pointer-events: none; /* Disable clicks on arrow */
+    transition: transform 0.2s ease-in-out; /* Smooth arrow animation */
+  }
+  &:focus {
+    outline: 2px solid #66f; /* Focus ring color */
+  }
+  /* Style options within the dropdown */
+  option {
+    background-color: #fff; /* White background for options */
+    color: #333; /* Dark text color for readability */
+    padding: 5px 10px; /* Adjust option padding */
+  }
+}
+
+/* Optional hover state for dropdown arrow animation */
+select:hover:after {
+  transform: translateY(-50%) rotate(180deg); /* Rotate arrow on hover */
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none; /* Remove focus ring */
+}
+
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 4px solid #ffffff; /* Green focus ring */
+}
+
+input[type="date"]:focus {
+  outline: none; /* Remove focus ring for date inputs */
+}
+
+.container {
+  /*display: flex; /* Enable flexbox layout */
+  /*justify-content: center; /* Center items horizontally */
+  /*align-items: center; /* Center items vertically (optional) */
+  font-family: 'Montserrat', sans-serif;
+  width: 500px;
+  margin: 50px auto;
+  padding: 40px;
+  background-color: #3333;
+  border-radius: 20px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  margin-top: 10;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgb(34, 33, 33);
+  --animate-delay: 2s;
+}

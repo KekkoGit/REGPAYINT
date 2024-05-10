@@ -1,0 +1,9 @@
+.Img {
+    /* General styling for all images */
+    display: block; /* Display images as block elements */
+    margin: 0 auto; /* Center images horizontally */
+    max-width: 100%; /* Prevent images from overflowing their containers */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Adjust shadow parameters */
+  }
